@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+    <title>Tech.School</title>
+    <link rel="icon" href="assets/reward_success_achievement_winner_award_trophy_icon_256747.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+</head>
+<body>
+    <img width="150px" class="imgL" src="https://imapo.ru/img/imgr2.png">
+    <img width="150px" class="imgR" src="https://imapo.ru/img/imgr2.png">
+    <!-- -------гирлянда------- -->
+    <div id="garland" class="garland_4">
+        <div id="nums_1">1</div>
+        </div>
+         
+        <script>
+        function garland() {
+        nums = document.getElementById('nums_1').innerHTML
+        if (nums == 1) {
+        document.getElementById('garland').className = 'garland_1';
+        document.getElementById('nums_1').innerHTML = '2'
+        }
+        if (nums == 2) {
+        document.getElementById('garland').className = 'garland_2';
+        document.getElementById('nums_1').innerHTML = '3'
+        }
+        if (nums == 3) {
+        document.getElementById('garland').className = 'garland_3';
+        document.getElementById('nums_1').innerHTML = '4'
+        }
+        if (nums == 4) {
+        document.getElementById('garland').className = 'garland_4';
+        document.getElementById('nums_1').innerHTML = '1'
+        }
+        };
+         
+        setInterval(function() {
+        garland();
+        }, 600);
+        </script>
+    <!-- -------конец гирлянды------- -->
+    <section class="introduction">
+        <header>
+            <div class="menu-bar">
+                <div class="menu-logo">
+                    <a href="#" class="logo">TECH.SCHOOL</a>
+                </div>
+                <div class="mobile-menu">
+                    <a href="#"><img src="assets/phone.svg" alt=""></a>
+                    <a href="secret.html"><img src="assets/burger.svg" alt=""></a>
+                </div>
+                <div class="menu-about">
+                    <a href="#about-us" class="about-item">О школе</a>
+                    <a href="#trainers" class="about-item">Тренеры</a>
+                    <a href="#packets" class="about-item">Стоимость</a>
+                </div>
+                <div class="menu-number">
+                    <span>+375 25 575-87-78</span>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+                <div class="introduction-block">
+                    <div class="left">
+                        <h1>TECH SCHOOL</h1>
+                        <p class="courses">Курсы повышения квалификации по робототехнике<br>для педагогов начальной школы</p>
+                        <a class="button-enroll" href="contact.html" target="_blank">Свяжитесь с нами</a>
+                    </div>
+                    <img class="right" src="assets/user-image-1.png" alt="picture">
+                </div>
+        </div>
+    </section>
+    
+    <main>
+        <section class="main-info">
+            <a name="about-us"></a>
+            <div class="container">
+                <div class="info-about">
+                    <p>
+                        <b>Tech School </b>  – учреждение для формирования кадрового<br>педагогического резерва в сфере робототехники<br>и программирования
+                    </p>
+                </div>
+                <div class="info-numbers">
+                    <div class="numbers-item">
+                        <div class="item-num">10</div>
+                        <div class="item-text">УМК по различным<br>направлениям по робототехнике</div>
+                    </div>
+                    <div class="numbers-item">
+                        <div class="item-num">20</div>
+                        <div class="item-text">Школ, в которых запущена<br>робототехника</div>
+                    </div>
+                    <div class="numbers-item">
+                        <div class="item-num">100</div>
+                        <div class="item-text">Педагогов прошедших курсы<br>повышения квалификации</div>
+                    </div>
+                    <div class="numbers-item">
+                        <div class="item-num">10 000</div>
+                        <div class="item-text">Обученных детей на базе<br>  собственных центров</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="advantages">
+            <div class="container">
+                <div class="services">Что вы получите после курса</div>
+                <div class="services-text">
+                    <div class="services-text-item">
+                        <p class="title">Удостоверение</p>
+                        <p class="text">Дающее право преподавать робототехнику для детей 6-12 лет в образовательных учреждениях</p>
+                    </div>
+                    <div class="services-text-item">
+                        <p class="title">Знания</p>
+                        <p class="text">По основам разработки учебно- методических комплексов по робототехнике и программированию</p>
+                    </div>
+                    <div class="services-text-item">
+                        <p class="title">Практику</p>
+                        <p class="text">Возможность пройти практику по преподаванию робототехники на базе RED LAB (в оффлайн или онлайн формате)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="trainers">
+            <div class="container">
+                <a name="trainers"></a>
+                <div class="trainer-title">Профессиональные тренеры</div>
+                <div class="trainers-block">
+                    <div class="trainers-item">
+                        <img src="assets/irina.jpg" alt="irina" class="trainer">
+                        <p class="trainer-name">Ирина Лайм</p>
+                        <p class="trainer-status">преподаватель по робототехнике</p>
+                        <a class="more" href="#">Подробнее</a>
+                    </div>
+                    <div class="trainers-item">
+                        <img src="assets/marina.jpg" alt="marina" class="trainer">
+                        <p class="trainer-name">Марина Орлова</p>
+                        <p class="trainer-status">преподаватель по робототехнике</p>
+                        <a class="more" href="#">Подробнее</a>
+                    </div>
+                    <div class="trainers-item">
+                        <img src="assets/maksim.jpg" alt="maksim" class="trainer">
+                        <p class="trainer-name">Максим Петров</p>
+                        <p class="trainer-status">преподаватель по программированию</p>
+                        <a class="more" href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="packets">
+            <div class="container">
+                <a name="packets"></a>
+                <div class="title">Выберите нужный пакет</div>
+                <div class="packet">
+                    <div class="packet-item black">
+                        <p class="name">– PRO –</p>
+                        <p class="price">20.000 ₽</p>
+                        <div class="descr"><p>УМК по робототетхнике</p><p> и программированию</p></div> 
+                        <button class="request">Оставить заявку</button>
+                    </div>
+                    <div class="packet-item white">
+                        <p class="name">– ROBO –</p>
+                        <p class="price">15.000 ₽</p>
+                        <p class="descr">УМК по робототетхнике</p>
+                        <button class="request">Оставить заявку</button>
+                    </div>
+                    <div class="packet-item white">
+                        <p class="name">– PROG –</p>
+                        <p class="price">10.000 ₽</p>
+                        <p class="descr">УМК по программированию</p>
+                        <button class="request">Оставить заявку</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="enroll">
+            <div class="container">
+                <div class="enroll-text">
+                    <div>
+                        <p class="enroll-upper">Запишитесь на курс <br>со скидкой 10% </p>
+                    </div>
+                    <div class="enroll-bottom">
+                        <p class="enr-upp">Акция действительна до 31 декабря 2023 года</p>
+                    </div>
+                </div>
+                <div>
+                    <form class="enroll-form" action="#" method="get">
+                        <div class="form-textbox">
+                            <input class="enroll-textbox" type="text" name="name" placeholder="Имя">
+                        </div>
+                        <div class="form-textbox">
+                            <input class="enroll-textbox" type="text" name="phone" placeholder="Телефон">
+                        </div>
+                        <div class="form-textbox">
+                            <input class="enroll-textbox" type="text" name="mail" placeholder="E-mail">
+                        </div>
+                        <div class="form-button">
+                            <input class="enroll-btn" type="submit" value="Оформить заявку">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="end">
+                <div class="end-upper">
+                    <p class="footer-logo">TECH.SCHOOL</p>
+                    <p class="end-right">+375 25 575-87-78</p>
+                </div>
+                <div class="dog">© TECH.SCHOOL</div>
+            </div>
+        </div>
+    </footer>
+    <script src="snow/jSnow.js"></script>
+
+<script>
+
+	$(document).ready(function() {
+
+		$("body").jSnow({
+			vSize: 760, // Размер области
+			flakes: 30, // Количество снежинок
+			flakeColor: ["#fff"], // Цвет
+			flakeMinSize: 10, // Минимальный размер снежинки
+			flakeMaxSize: 20, // Максимальный размер снежинки
+			fallingSpeedMin: 1, // Минимальная скорость снежинки
+			fallingSpeedMax: 2, // Максимальная скорость снежинки
+			flakeCode:["&bull;"] // Вид снежинки
+		});
+
+	});
+
+</script>
+</body>
+</html>
